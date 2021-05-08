@@ -368,27 +368,28 @@
 				</div>
 				<div class="choose animate-box">
 					<h2>Contact</h2>
-					<form action="#">
+					<form action="https://formsubmit.co/sudhanshudhere64@gmail.com" method="POST">
+
 						<div class="row form-group">
 							<div class="col-md-6">
-								<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+								<input type="text" name="first_Name" id="fname" class="form-control" placeholder="Your firstname" required>
 							</div>
 						</div>
 						<div class="row form-group">
 							<div class="col-md-6">
-								<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+								<input type="text" name="Last_Name" id="lname" class="form-control" placeholder="Your lastname">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
-								<input type="text" id="email" class="form-control" placeholder="Your email address">
+								<input type="email" name="email_id" id="email" class="form-control" placeholder="Your email address">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
-								<input type="text" id="subject" class="form-control"
+								<input type="text" name="subject" id="subject" class="form-control"
 									placeholder="Your subject of this message">
 							</div>
 						</div>
@@ -402,6 +403,9 @@
 						<div class="form-group">
 							<input type="submit" value="Send Message" class="btn btn-primary">
 						</div>
+						<input type="hidden" name="_template" value="table">
+						<input type="hidden" name="_captcha" value="false">
+<!--						<input type="hidden" name="_next" value="https://localhost/thanks.html">-->
 
 					</form>
 				</div>
